@@ -34,7 +34,7 @@ const About = () => {
         {/* History */}
         <section className="bg-openledger-background py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-openledger-text text-center">Our History</h2>
+            <h2 className="text-3xl font-extrabold text-openledger-text text-center">Our Roadmap</h2>
             <div className="mt-12 relative">
               <div className="absolute inset-0 flex items-center" aria-hidden="true">
                 <div className="w-full border-t border-gray-300"></div>
@@ -42,31 +42,31 @@ const About = () => {
               <div className="relative flex justify-between">
                 <div className="bg-openledger-background px-4">
                   <div className="w-12 h-12 rounded-full bg-openledger-primary flex items-center justify-center text-white">
-                    <span className="font-bold">2018</span>
+                    <span className="font-bold">2024</span>
                   </div>
                   <h3 className="mt-4 text-lg font-bold text-openledger-text">Founded</h3>
                   <p className="mt-2 text-gray-500">Openledger Institute was established</p>
                 </div>
                 <div className="bg-openledger-background px-4">
                   <div className="w-12 h-12 rounded-full bg-openledger-primary flex items-center justify-center text-white">
-                    <span className="font-bold">2020</span>
+                    <span className="font-bold">2025</span>
                   </div>
                   <h3 className="mt-4 text-lg font-bold text-openledger-text">Platform Launch</h3>
                   <p className="mt-2 text-gray-500">First version of the platform launched</p>
                 </div>
                 <div className="bg-openledger-background px-4">
                   <div className="w-12 h-12 rounded-full bg-openledger-primary flex items-center justify-center text-white">
-                    <span className="font-bold">2022</span>
+                    <span className="font-bold">2026</span>
                   </div>
-                  <h3 className="mt-4 text-lg font-bold text-openledger-text">Global Expansion</h3>
-                  <p className="mt-2 text-gray-500">Expanded to 20+ countries</p>
+                  <h3 className="mt-4 text-lg font-bold text-openledger-text">Openledger Core Development</h3>
+                  <p className="mt-2 text-gray-500">Modular engine under active development.</p>
                 </div>
                 <div className="bg-openledger-background px-4">
                   <div className="w-12 h-12 rounded-full bg-openledger-primary flex items-center justify-center text-white">
-                    <span className="font-bold">2024</span>
+                    <span className="font-bold">2027</span>
                   </div>
                   <h3 className="mt-4 text-lg font-bold text-openledger-text">Token Launch</h3>
-                  <p className="mt-2 text-gray-500">Launched OLI governance token</p>
+                  <p className="mt-2 text-gray-500">Launch governance token</p>
                 </div>
               </div>
             </div>
@@ -83,9 +83,9 @@ const About = () => {
             <div className="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  name: "Dr. Sarah Chen",
+                  name: "Celso Jung",
                   role: "Founder & CEO",
-                  bio: "PhD in Computer Science with expertise in distributed systems and blockchain technology."
+                  bio: "Award-winning innovator in finance and technology, with expertise in distributed systems and blockchain technology."
                 },
                 {
                   name: "Michael Rodriguez",
