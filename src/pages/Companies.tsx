@@ -69,8 +69,6 @@ const Companies = () => {
                       </span>
                     </div>
                     <div className="ml-4 text-sm">
-                      <span className="font-medium text-openledger-text">$4.{index + 1}</span>
-                      <span className="ml-1 text-green-500">+{index + 1}%</span>
                     </div>
                   </div>
                   <div className="mt-6">
