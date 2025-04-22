@@ -51,7 +51,7 @@ export function Navbar() {
             </div>
             <div className="ml-6 flex items-center space-x-2">
               <Link to="/auth/login">
-                <Button variant="ghost" className="text-openledger-text hover:text-openledger-primary">
+                <Button variant="ghost" className="text-openledger-text hover:text-white hover:bg-gray-600 transition-colors">
                   Login
                 </Button>
               </Link>
