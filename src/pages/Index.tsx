@@ -15,10 +15,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Tokenizing Research for a Decentralized Future
+              Brilliant Minds for Open Innovation
             </h1>
             <p className="mt-6 text-xl text-gray-100 max-w-3xl">
-              Openledger Institute connects researchers, entrepreneurs, and investors through tokenized projects, smart networking, and a comprehensive technical paper library.
+              Join the Openledger Institute community and explore projects, tokens, and impactful global connections.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link to="/projects">
