@@ -112,7 +112,7 @@ const Index = () => {
                       A brief description of this innovative project and its potential impact on the field.
                     </p>
                     <div className="mt-6 flex justify-between items-center">
-                      <span className="text-openledger-text font-semibold">500,000 OLI</span>
+                      <span className="text-openledger-text font-semibold">500,000 OPNL</span>
                       <Button variant="outline" className="text-openledger-primary border-openledger-primary hover:bg-openledger-primary hover:text-white">
                         View Details
                       </Button>
