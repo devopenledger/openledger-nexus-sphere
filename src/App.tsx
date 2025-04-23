@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -20,6 +19,7 @@ import Tokens from "./pages/Tokens";
 import Library from "./pages/Library";
 import Marketplace from "./pages/Marketplace";
 import Profile from "./pages/Profile";
+import CompanyProfile from "./pages/CompanyProfile";
 
 // Auth Pages
 import Login from "./pages/auth/Login";
@@ -57,6 +57,7 @@ const App = () => (
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="/companies" element={<Companies />} />
+          <Route path="/companies/:slug" element={<CompanyProfile />} />
           <Route path="/tokens" element={<Tokens />} />
           <Route path="/library" element={<Library />} />
           <Route path="/marketplace" element={<Marketplace />} />
