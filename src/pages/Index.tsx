@@ -1,13 +1,10 @@
-
 import React from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       <Navbar />
       
       {/* Hero Section */}
@@ -27,18 +24,14 @@ const Index = () => {
                 </Button>
               </Link>
               <Link to="/about">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-openledger-text px-8 py-3 text-base font-medium">
+                <Button variant="outline" className="border-white hover:bg-white px-8 py-3 text-base font-medium text-openledger-text">
                   Learn More
                 </Button>
               </Link>
             </div>
           </div>
           <div className="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
-            <img 
-              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-              alt="Decentralized Research" 
-              className="rounded-lg shadow-xl max-w-md"
-            />
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Decentralized Research" className="rounded-lg shadow-xl max-w-md" />
           </div>
         </div>
       </div>
@@ -103,8 +96,7 @@ const Index = () => {
 
           <div className="mt-16">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              {[1, 2, 3].map((index) => (
-                <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
+              {[1, 2, 3].map(index => <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
                   <div className="h-48 bg-gray-300"></div>
                   <div className="p-6">
                     <h3 className="text-lg font-bold text-openledger-text">Project Title {index}</h3>
@@ -126,8 +118,7 @@ const Index = () => {
                       </Button>
                     </div>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
             <div className="mt-12 text-center">
               <Link to="/projects">
@@ -167,8 +158,6 @@ const Index = () => {
       </div>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
