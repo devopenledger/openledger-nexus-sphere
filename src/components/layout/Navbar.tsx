@@ -3,7 +3,20 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Logo } from '../ui/logo';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+  Menu,
+  User,
+  Settings,
+  LogOut,
+  X
+} from 'lucide-react';
 
 const navItems = [
   { name: 'Home', path: '/' },
@@ -18,6 +31,8 @@ const navItems = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  // Mock authentication state - this will be replaced with real auth later
+  const isAuthenticated = false;
 
   const isActive = (path: string) => {
     if (path === '/' && location.pathname !== '/') return false;
@@ -50,16 +65,49 @@ export function Navbar() {
               ))}
             </div>
             <div className="ml-6 flex items-center space-x-2">
-              <Link to="/auth/login">
-                <Button variant="ghost" className="text-openledger-text hover:text-white hover:bg-gray-600 transition-colors">
-                  Login
-                </Button>
-              </Link>
-              <Link to="/auth/register">
-                <Button className="bg-openledger-cta hover:bg-blue-600 text-white">
-                  Register
-                </Button>
-              </Link>
+              {isAuthenticated ? (
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" className="relative h-8 w-8 rounded-full">
+                      <User className="h-5 w-5" />
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-56" align="end" forceMount>
+                    <Link to="/dashboard">
+                      <DropdownMenuItem>
+                        <User className="mr-2 h-4 w-4" />
+                        <span>Dashboard</span>
+                      </DropdownMenuItem>
+                    </Link>
+                    <Link to="/profile/settings">
+                      <DropdownMenuItem>
+                        <Settings className="mr-2 h-4 w-4" />
+                        <span>Settings</span>
+                      </DropdownMenuItem>
+                    </Link>
+                    <DropdownMenuSeparator />
+                    <Link to="/">
+                      <DropdownMenuItem>
+                        <LogOut className="mr-2 h-4 w-4" />
+                        <span>Log out</span>
+                      </DropdownMenuItem>
+                    </Link>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              ) : (
+                <>
+                  <Link to="/auth/login">
+                    <Button variant="ghost" className="text-openledger-text hover:text-white hover:bg-gray-600 transition-colors">
+                      Login
+                    </Button>
+                  </Link>
+                  <Link to="/auth/register">
+                    <Button className="bg-openledger-cta hover:bg-blue-600 text-white">
+                      Register
+                    </Button>
+                  </Link>
+                </>
+              )}
             </div>
           </div>
 

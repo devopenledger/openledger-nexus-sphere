@@ -63,6 +63,9 @@ const App = () => (
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/profile/:id" element={<Profile />} />
           
+          {/* Profile Routes */}
+          <Route path="/profile/settings" element={<Settings />} />
+          
           {/* Auth Routes */}
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
